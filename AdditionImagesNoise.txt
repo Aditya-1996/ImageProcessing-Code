@@ -1,0 +1,9 @@
+addition of images:
+a=imread('cameraman.tif');
+b=imnoise(a,'salt & pepper',0.2);
+c=imread('rice.png');
+d=imnoise(c,'speckle',0.1);
+e=imadd(b,d);
+subplot(1,3,1); imshow(b);
+subplot(1,3,2); imshow(d);
+subplot(1,3,3); imshow(e);
